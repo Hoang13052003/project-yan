@@ -6,10 +6,18 @@ body{
 }
 
 /* content */
+/* swiper */
+.myslide{
+    padding-top: 130px;
+    padding-bottom: 40px;
+    /* height: 400px; */
+}
+
 /* left */
 .slidesticky{
-    width: 80%;
-    padding-top: 100px;
+    width: 100%;
+    /* position: relative;
+    top: -50px; */
 }
 
 .name-new-list-new{
