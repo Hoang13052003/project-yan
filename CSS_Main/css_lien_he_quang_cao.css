@@ -1,0 +1,18 @@
+.lien-he-quang-cao{
+    padding: 20px 0;
+    margin-top: 100px;
+}
+.lien-he-quang-cao input{
+    height: 40px;
+}
+.lien-he-quang-cao .button{
+    background-color: #28a745; 
+    color: #fff; 
+    width: 200px; 
+    height: 40px; 
+    border: none; 
+    border-radius: 5px;
+}
+.lien-he-quang-cao .button:hover{
+    box-shadow: 1px 2px 5px 2px gray;
+}

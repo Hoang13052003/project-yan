@@ -1,0 +1,119 @@
+
+/* mobile */
+@media (max-width: 767px){
+    .footer-nav div a{
+        font-size: 10px;
+    }
+    .footer-cate li a{
+        font-size: 10px;
+    }
+}
+/* taplet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-nav div a{
+        font-size: 10px;
+    } 
+    .menu-chat{
+        position: relative;
+        left: 20px;
+    }
+}
+/* desktop */
+@media (max-width: 1200px) {
+    .footer-nav div a{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1230px){
+    .navbar-nav li a{
+        font-size: 12px;
+    }
+    .tuyen-dung{
+        display: block;
+    }
+    .nav-top-right{
+        display: none;
+    }
+}
+
+@media (max-width: 1140px){
+    .navbar-nav li a{
+        font-size: 9px;
+    }
+    .nav-top-right > span > a{
+        font-size: 10px;  
+    }
+    .name-new-list-new{
+        background-size:20px;
+        height: 40px;
+    }
+    
+    .name-new-list-new > span{
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .name-new-list-fair{
+        background-size:20px;
+        height: 40px;
+    }
+    
+    .name-new-list-fair > span{
+        line-height: 40px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 1040px){
+    .navbar-nav li a{
+        font-size: 7px;
+    }
+    .nav-top-right > span > a{
+        font-size: 10px;  
+    }
+    .item-cong-dong-content{
+        font-size: 12px;
+    }
+    .name-new-list-new{
+        background-size:16px;
+        height: 40px;
+    }
+    
+    .name-new-list-new > span{
+        line-height: 40px;
+        font-size: 16px;
+    }
+    .name-new-list-fair{
+        background-size:18px;
+        height: 40px;
+    }
+    
+    .name-new-list-fair > span{
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+    .menu-chat{
+        position: relative;
+        left: 20px;
+    }
+
+    .footer-top .name-menu-sao{
+        height: 40px;
+        background-size:20px;
+    }
+    
+    .name-menu-sao > span{
+        line-height: 40px;
+        font-size: 18px;
+    }
+    
+    .footer-top .name-menu-video{
+        height: 40px;
+        background-size:20px;
+    }
+    
+    .name-menu-video > span{
+        line-height: 40px;
+        font-size: 18px;
+    }
+}

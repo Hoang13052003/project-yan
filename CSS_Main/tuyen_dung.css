@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* banner */
+.mybanner{
+    margin-top: 100px;
+}

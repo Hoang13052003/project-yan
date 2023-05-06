@@ -1,0 +1,104 @@
+/* footer */
+
+/* ----footer-nav */
+.footer-nav{
+    background-image: linear-gradient(100deg,#e22027,#bf0f15);
+    height: 40px;
+}
+.footer-nav div a{
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-nav{
+    background-color: red;
+}
+.footer-nav  a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+/* ---footer-top */
+
+.footer-top {
+    font-size: 12px;
+    padding-top: 30px;
+    background-color: #303030;
+}
+
+.footer-top a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.footer-top ul li{
+    list-style: none;
+    line-height: 40px;
+}
+
+.container .col-md-12{
+    padding: 0;
+}
+
+.menu-chat{
+    position: relative;
+    left: -50px;
+}
+
+.footer-top .name-menu-sao{
+    height: 50px;
+    background-image:url(https://static1.yan.vn/2019/theme/images/icon-start.svg);
+    background-position: 0% 50%;
+    background-size:30px;
+    background-repeat: no-repeat;
+}
+
+.name-menu-sao > span{
+    line-height: 50px;
+    font-size: 24px;
+    color: #e22027;
+    padding-left: 35px;
+    text-transform: uppercase;
+}
+
+.footer-top .name-menu-video{
+    height: 50px;
+    background-image:url(https://static1.yan.vn/2019/theme/images/play-red-icon.svg);
+    background-position: 0% 50%;
+    background-size:30px;
+    background-repeat: no-repeat;
+}
+
+.name-menu-video > span{
+    line-height: 50px;
+    font-size: 24px;
+    color: #e22027;
+    padding-left: 35px;
+}
+
+.footer-top .footer-cate{
+    font-size: 14px;
+}
+
+.footer-cate li a:hover{
+    font-weight: 700;
+    color: #e22026;
+}
+
+.footer-bottom{
+    color: #ffffff;
+    padding: 40px 0px;
+    font-size: 13px;
+    background-color: #000000;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-info{
+    width: 90%;
+    border-right: 1px solid gray;
+}
