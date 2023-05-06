@@ -1,5 +1,5 @@
 
-/* mobile */
+
 @media (max-width: 767px){
     .footer-nav div a{
         font-size: 10px;
@@ -7,8 +7,18 @@
     .footer-cate li a{
         font-size: 10px;
     }
+    .nav-top{
+        display: none;
+    }
+    .logo{
+        position: relative;
+        top: -10px;
+    }
+    .navbar{
+        height: 80px;
+    }
 }
-/* taplet */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .footer-nav div a{
         font-size: 10px;
@@ -17,8 +27,23 @@
         position: relative;
         left: 20px;
     }
+    
+    .item-content-new-left .name-item-content-new-left a{
+        font-size: 14px;
+    }
+    
+    .item-content-new-left .my-cdm{
+        font-size: 10px;
+    }
+    
+    .my-cdm .card__ItemCategory{
+        font-size: 10px!important;
+    }
+    .item-content-new-left .description{
+        font-size: 10px;
+    }
 }
-/* desktop */
+
 @media (max-width: 1200px) {
     .footer-nav div a{
         font-size: 10px;
@@ -115,5 +140,17 @@
     .name-menu-video > span{
         line-height: 40px;
         font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .item-content-new-left{
+        padding-right: 0px;
+    }
+}
+@media (max-width: 991.9px) {
+    .navbar-nav li a{
+        font-size: 15px;
+        padding-left: 10px;
     }
 }
