@@ -121,7 +121,13 @@
         position: relative;
         left: 20px;
     }
-
+    .menu-chat .footer-cate{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu-chat .footer-cate li{
+        margin-right: 40px;
+    }
     .footer-top .name-menu-sao{
         height: 40px;
         background-size:20px;
