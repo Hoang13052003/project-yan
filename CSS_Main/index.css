@@ -12,7 +12,10 @@ body{
     padding-bottom: 40px;
     /* height: 400px; */
 }
-
+.myslide-update-croll{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
 /* left */
 .slidesticky{
     width: 90%;
@@ -69,6 +72,24 @@ body{
     text-align: justify;
     color: #888!important;
 }
+
+#button-new{
+    width: 25%;
+    height: 50px;
+    line-height: 40px;
+    font-size: 20px;
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#button-new:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.active-new{
+    display: none;
+}
+
 
 /* right */
 .name-new-list-fair{
@@ -135,7 +156,22 @@ body{
     text-decoration: none;
     color: #303030;
 }
-
+#button-cong-dong{
+    width: 60%;
+    height: 50px;
+    line-height: 40px;
+    font-size: 20px;
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#button-cong-dong:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.active-cong-dong{
+    display: none;
+}
 
 /* lazy-zone */
 .lazy-zone{

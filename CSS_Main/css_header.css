@@ -7,6 +7,12 @@
     left: 0;
     right: 0;
 }
+.none-position-fixed{
+    position: relative;
+}
+.hidden-nav{
+  transform: translateY(-100px);
+}
 /* nav top */
 .header-container{
     height: 50px;

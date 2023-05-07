@@ -157,6 +157,31 @@
             <img class="carousel-control-prev-icon carousel-control-next" href="#recipeCarousel" role="button" data-bs-slide="next" aria-hidden="true" src="img/swiper/arrow-right.svg" alt="">
         </div> 
     </section>
+    <!-- js phần croll chuột lên xuống ẩn hiện thanh header -->
+    <script>
+        var navbar = document.querySelector('.myheader');
+        var slide = document.querySelector('.myslide');
+        var prevScrollPos = window.pageYOffset;
+
+        window.addEventListener('scroll', function() {
+          var currentScrollPos = window.pageYOffset;
+          var scrollPosition = window.scrollY;
+          if(scrollPosition > 120){
+                navbar.classList.remove('none-position-fixed');
+                slide.classList.remove('myslide-update-croll');
+                if (prevScrollPos > currentScrollPos) {
+                  navbar.classList.remove('hidden-nav');
+                } else {
+                  navbar.classList.add('hidden-nav');
+                }
+            }
+            else{
+                navbar.classList.add('none-position-fixed');
+                slide.classList.add('myslide-update-croll');
+            }
+          prevScrollPos = currentScrollPos;
+        });
+    </script>
     <!-- js phần swiper -->
     <script>
         let items = document.querySelectorAll('.carousel .carousel-item')
@@ -399,6 +424,39 @@
     
                         
                     </div>
+                    <div class="row active-new">
+                        <div class="col-md-6 item-img-new-left">
+                            <a href=""><img src="img/bai-moi-nhat/bai15.jpg" class="img-fluid w-100" alt=""></a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item-content-new-left">
+                                <h3 class="name-item-content-new-left"><a href="#">Những cuộc gọi từ gia đình: Ấm áp nhưng đôi khi phiền toái với con trẻ</a></h3>
+                                <p class="my-cdm">
+                                    <a href="#" class="card__ItemCategory"><b>CỘNG ĐỒNG MẠNG</b></a>
+                                    <span class="item-category-slug">-</span>
+                                    <span class="description">5 giờ trước</span>
+                                </p>
+                                <p class="description">Đi xa nhà, hẳn ai cũng từng nhận được những cuộc điện thoại từ bố mẹ. Thế nhưng, đôi khi vì bận với những cuộc vui mà con trẻ lại cảm thấy phiền toái.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 item-img-new-left">
+                            <a href=""><img src="img/bai-moi-nhat/bai15.jpg" class="img-fluid w-100" alt=""></a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item-content-new-left">
+                                <h3 class="name-item-content-new-left"><a href="#">Những cuộc gọi từ gia đình: Ấm áp nhưng đôi khi phiền toái với con trẻ</a></h3>
+                                <p class="my-cdm">
+                                    <a href="#" class="card__ItemCategory"><b>CỘNG ĐỒNG MẠNG</b></a>
+                                    <span class="item-category-slug">-</span>
+                                    <span class="description">5 giờ trước</span>
+                                </p>
+                                <p class="description">Đi xa nhà, hẳn ai cũng từng nhận được những cuộc điện thoại từ bố mẹ. Thế nhưng, đôi khi vì bận với những cuộc vui mà con trẻ lại cảm thấy phiền toái.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center py-3">
+                        <button id="button-new">Xem thêm <i class="fas fa-angle-right"></i></button>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-12 new-list-item-right">
                      <div class="row">
@@ -542,7 +600,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row active-cong-dong">
                                         <div class="col-md-4 item-cong-dong-img">
                                             <a target="_blank" href="https://www.facebook.com/YAN.Docthanvuitinh/"><img class="img-fluid w-100" src="img/con-dong/page-doc-than-vui-tinh.png" alt=""></a>
                                         </div>
@@ -553,7 +611,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row active-cong-dong">
                                         <div class="col-md-4 item-cong-dong-img">
                                             <a target="_blank" href="https://www.facebook.com/Ohman.vn/"><img class="img-fluid w-100" src="img/con-dong/page-ohman.png" alt=""></a>
                                         </div>
@@ -564,7 +622,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row active-cong-dong">
                                         <div class="col-md-4 item-cong-dong-img">
                                             <a target="_blank" href="https://www.facebook.com/dienanh.net/"><img class="img-fluid w-100" src="img/con-dong/page-dien-anh.png" alt=""></a>
                                         </div>
@@ -575,7 +633,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row active-cong-dong">
                                         <div class="col-md-4 item-cong-dong-img">
                                             <a target="_blank" href="https://www.facebook.com/ngamnhadep/"><img class="img-fluid w-100" src="img/con-dong/page-ngam-nha-dep.png" alt=""></a>
                                         </div>
@@ -587,6 +645,9 @@
                                         </div>
                                     </div>
                                     <!-- thêm item cộng đồng -->
+                                    <div class="row justify-content-center py-3">
+                                        <button id="button-cong-dong">Xem tất cả cộng đồng <i class="fas fa-angle-right"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -933,6 +994,37 @@
             </div>
         </div>
     </section>
+    <!-- script mở thêm item cho danh sách bài mới nhất và danh sách cộng đồng-->
+    <script>
+        // new
+        function ShowAllNew(className) {
+            var cardItems = document.getElementsByClassName(className);
+            for (var i = 0; i < cardItems.length; i++) {
+                cardItems[i].style.display = "flex";
+            }
+            var button = document.getElementById("button-new");
+            button.style.display = "none";
+        }
+
+        var button = document.getElementById("button-new");
+        button.onclick = function() {
+            ShowAllNew("active-new");
+        };
+        // cộng đồng
+        function ShowAllCD(className) {
+            var cardItems = document.getElementsByClassName(className);
+            for (var i = 0; i < cardItems.length; i++) {
+                cardItems[i].style.display = "flex";
+            }
+            var buttoncd = document.getElementById("button-cong-dong");
+            buttoncd.style.display = "none";
+        }
+
+        var buttoncd = document.getElementById("button-cong-dong");
+        buttoncd.onclick = function() {
+            ShowAllCD("active-cong-dong");
+        };
+    </script>
    <!-- footer -->
     <footer class="footer">
     <div class="footer-nav">
