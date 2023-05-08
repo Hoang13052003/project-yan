@@ -153,56 +153,10 @@
                     </div>
                 </div>
             </div>
-            <img class=" carousel-control-prev" href="#recipeCarousel" role="button" data-bs-slide="prev" aria-hidden="true" src="img/swiper/arrow-left.svg" alt="">
-            <img class=" carousel-control-next" href="#recipeCarousel" role="button" data-bs-slide="next" aria-hidden="true" src="img/swiper/arrow-right.svg" alt="">
+            <img class="carousel-control-prev" href="#recipeCarousel" role="button" data-bs-slide="prev" aria-hidden="true" src="img/swiper/arrow-left.svg" alt="">
+            <img class="carousel-control-next" href="#recipeCarousel" role="button" data-bs-slide="next" aria-hidden="true" src="img/swiper/arrow-right.svg" alt="">
         </div> 
     </section>
-    <!-- js phần croll chuột lên xuống ẩn hiện thanh header  -->
-    <script>
-        var navbar = document.querySelector('.myheader');
-        var slide = document.querySelector('.myslide');
-        var prevScrollPos = window.pageYOffset;
-        
-        window.addEventListener('scroll', function() {
-            var currentScrollPos = window.pageYOffset;
-            var scrollPosition = window.scrollY;
-            
-            if(scrollPosition > 130){
-                navbar.classList.remove('none-position-fixed');
-                slide.classList.remove('myslide-update-croll');
-                if (prevScrollPos > currentScrollPos) {
-                    setTimeout(function(){
-                        navbar.classList.remove('hidden-nav');
-                    }, 200);
-                } else {
-                    navbar.classList.add('hidden-nav');
-                }
-            }
-            else{
-                navbar.classList.add('none-position-fixed');
-                slide.classList.add('myslide-update-croll');
-            }
-          prevScrollPos = currentScrollPos;
-        });
-    </script>
-    <!-- js phần swiper -->
-    <script>
-        let items = document.querySelectorAll('.carousel .carousel-item')
-
-        items.forEach((el) => {
-            const minPerSlide = 4
-            let next = el.nextElementSibling
-            for (var i=1; i<minPerSlide; i++) {
-                if (!next) {
-                    // wrap carousel by using first child
-                	next = items[0]
-              	}
-                let cloneChild = next.cloneNode(true)
-                el.appendChild(cloneChild.children[0])
-                next = next.nextElementSibling
-            }
-        })
-    </script>
     <!-- content -->
     <section class="mycontent">
         <!-- slidesticky -->
@@ -997,37 +951,6 @@
             </div>
         </div>
     </section>
-    <!-- script mở thêm item cho danh sách bài mới nhất và danh sách cộng đồng-->
-    <script>
-        // new
-        function ShowAllNew(className) {
-            var cardItems = document.getElementsByClassName(className);
-            for (var i = 0; i < cardItems.length; i++) {
-                cardItems[i].style.display = "flex";
-            }
-            var button = document.getElementById("button-new");
-            button.style.display = "none";
-        }
-
-        var button = document.getElementById("button-new");
-        button.onclick = function() {
-            ShowAllNew("active-new");
-        };
-        // cộng đồng
-        function ShowAllCD(className) {
-            var cardItems = document.getElementsByClassName(className);
-            for (var i = 0; i < cardItems.length; i++) {
-                cardItems[i].style.display = "flex";
-            }
-            var buttoncd = document.getElementById("button-cong-dong");
-            buttoncd.style.display = "none";
-        }
-
-        var buttoncd = document.getElementById("button-cong-dong");
-        buttoncd.onclick = function() {
-            ShowAllCD("active-cong-dong");
-        };
-    </script>
    <!-- footer -->
     <footer class="footer">
     <div class="footer-nav">
@@ -1215,6 +1138,9 @@
       </div>
   </div>
     </footer>
+    <script src="JS_Main/js_head.js"></script>
+    <script src="JS_Main/js_swiper.js"></script>
+    <script src="JS_Main/js_xem_them.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
