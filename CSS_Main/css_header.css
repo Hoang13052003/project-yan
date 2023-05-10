@@ -2,13 +2,15 @@
 .myheader{
     height: 100px;
     z-index: 1;
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0; */
 }
-.none-position-fixed{
-    position: relative;
+.position-sticky{
+    position: sticky;
+    top: 0;
+    /* opacity: 1; */
 }
 .hidden-nav{
   transform: translateY(-100px);
