@@ -13,18 +13,25 @@
     <link rel="stylesheet" href="CSS_Main/index.css">
     <link rel="stylesheet" href="CSS_Main/responsive.css">
 </head>
-<body>
+<body class="body">
     <!-- header -->
     <header class="myheader">
         <div class="container-fluid header-container">
             <div class="row nav-top">
                 <div class="col-xl-2 col-md-2 nav-top-left"></div>
-                <div class="col-xl-7 col-md-10"></div>
+                <div class="col-xl-7 col-md-9"></div>
                 <div class="col-xl-2 nav-top-right">
                     <i class="fa-solid fa-circle-play"></i>
                     <span><a href="tuyendung.html" >Tuyển dụng</a></span>
                 </div>
-                <div class="col-md-1"></div>
+                <div class="col-xl-1 col-md-1">
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                           <input type="checkbox" id="checkbox" />
+                           <div class="slider round"></div>
+                        </label>
+                     </div>
+                </div>
             </div>
             <div class="row">
                 <nav class="navbar navbar-expand-lg">
@@ -1150,6 +1157,7 @@
     <script src="JS_Main/js_head.js"></script>
     <script src="JS_Main/js_swiper.js"></script>
     <script src="JS_Main/js_xem_them.js"></script>
+    <script src="JS_Main/js_themes.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

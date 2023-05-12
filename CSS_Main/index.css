@@ -5,13 +5,13 @@ body{
     box-sizing: border-box;
     background-color: #f3f3f3;
 }
-
 /* content */
 /* swiper */
 .myslide{
     padding-top: 30px;
     padding-bottom: 40px;
-    background-color: #e5e3e3;
+    background-color: var(--gray);
+    
 }
 .myslide-update-croll{
     padding-top: 20px;
@@ -20,8 +20,7 @@ body{
 /* left */
 .slidesticky{
     width: 90%;
-    /* position: relative;
-    top: -50px; */
+    padding-top: 40px;
 }
 
 .name-new-list-new{
@@ -51,7 +50,7 @@ body{
 }
 .item-content-new-left .name-item-content-new-left a{
     text-decoration: none;
-    color: black;
+    color: var(--black);
     font-size: 18px;
 }
 .item-content-new-left .name-item-content-new-left a:hover{
@@ -82,7 +81,7 @@ body{
     color: red;
     border: 2px solid red;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: var(--white);
 }
 #button-new:hover{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -116,7 +115,7 @@ body{
 }
 
 .new-content-right > a{
-    color: black;
+    color: var(--black);
     text-decoration: none;
 }
 .new-content-right > a:hover{
@@ -143,7 +142,7 @@ body{
 }
 
 .yan-member-tilte{
-    color: black;
+    color: var(--black);
     text-transform: uppercase;  
 }
 
@@ -155,7 +154,7 @@ body{
 }
 .item-cong-dong-content a{
     text-decoration: none;
-    color: #303030;
+    color: var(--black);
 }
 #button-cong-dong{
     width: 60%;
@@ -165,7 +164,7 @@ body{
     color: red;
     border: 2px solid red;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: var(--white);
 }
 #button-cong-dong:hover{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -184,7 +183,7 @@ body{
     margin-bottom: 20px;
 }
 .content1-lazy-zone a{
-    color: #000000;
+    color: var(--black);
     font-size: 18px;
     text-decoration: none;
 }
@@ -197,7 +196,7 @@ body{
 }
 
 .content2-lazy-zone a{
-    color: #000000;
+    color: var(--black);
     font-size: 14px;
     text-decoration: none;
 }
@@ -211,5 +210,25 @@ body{
 .content2-lazy-zone img{
     border-radius: 8px;
     /* margin-bottom: 30px; */
+}
+
+/* thay đổi themes trang wed */
+
+:root {
+    --white: #f3f3f3;
+    --black: black;
+    --gray: #e5e3e3;
+    --black-nhat: white;
+}
+[data-theme="dark"] {
+    --black-nhat: #4f4d4d;
+    --white: black;
+    --black: #f3f3f3;
+    --gray: #262525;
+}
+
+.body{
+    background-color: var(--white);
+    color: var(--black);
 }
 
