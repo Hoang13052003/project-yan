@@ -1,0 +1,12 @@
+:root {
+    --white: #f3f3f3;
+    --black: black;
+    --gray: #e5e3e3;
+    --black-nhat: white;
+}
+[data-theme="dark"] {
+    --black-nhat: #4f4d4d;
+    --white: #272626;
+    --black: #f3f3f3;
+    --gray: #5d5c5c;
+}

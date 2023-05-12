@@ -1,9 +1,11 @@
-body{
+
+.body{
     margin: 0;
     padding: 0;
     font-weight: 600;
     box-sizing: border-box;
-    background-color: #f3f3f3;
+    background-color: var(--white);
+    color: var(--black);
 }
 /* content */
 /* swiper */
@@ -212,23 +214,33 @@ body{
     /* margin-bottom: 30px; */
 }
 
-/* thay đổi themes trang wed */
+/* <!-- cuon len dau trang themes website --> */
+.len-dau-trang{
+    width: 40px;
+    height: 145px;
+    background-color: var(--black-nhat);
+    border-radius: 30px;
+    /* display: flex; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: fixed;
+    top: 450px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    /* bottom: 0; */
+}
 
-:root {
-    --white: #f3f3f3;
-    --black: black;
-    --gray: #e5e3e3;
-    --black-nhat: white;
-}
-[data-theme="dark"] {
-    --black-nhat: #4f4d4d;
-    --white: black;
-    --black: #f3f3f3;
-    --gray: #262525;
+.len-dau-trang img{
+    width: 30px;
+    height: 30px;
+    /* justify-content: center; */
+    align-items: center;
+    /* align-content: center; */
+    margin: 10px auto;
+    display: block;
 }
 
-.body{
-    background-color: var(--white);
-    color: var(--black);
-}
+
+
+
 
