@@ -10,24 +10,17 @@ window.addEventListener('scroll', function() {
         if (prevScrollPos < currentScrollPos) {
             setTimeout(function(){
                 navbar.classList.remove('position-sticky');
-            }, 300);
+            }, 200);
         } else {
             setTimeout(function(){
                 navbar.classList.add('position-sticky');
-            }, 300);
+            }, 200);
         }
-        // slide.classList.remove('myslide-update-croll');
-        // if (prevScrollPos > currentScrollPos) {
-        //     setTimeout(function(){
-        //         navbar.classList.remove('hidden-nav');
-        //     }, 200);
-        // } else {
-        //     navbar.classList.add('hidden-nav');
-        // }
     }
     else{
-        navbar.classList.remove('position-sticky');
-        // slide.classList.add('myslide-update-croll');
+        if(scrollPosition < 5){
+            navbar.classList.remove('position-sticky');
+        }
     }
   prevScrollPos = currentScrollPos;
 });

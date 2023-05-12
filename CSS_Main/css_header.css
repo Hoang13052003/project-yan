@@ -1,11 +1,8 @@
 /* header */
 .myheader{
     height: 100px;
-    z-index: 1;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0; */
+    z-index: 10;
+    
 }
 .position-sticky{
     position: sticky;

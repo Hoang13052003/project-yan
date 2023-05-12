@@ -17,47 +17,68 @@
         transform: translateX(-25%)
     }
 }
-@media (max-width: 992px) {
-    .card-img-overlay{
-        font-size: 12px;
-    }    
-}
+
 .carousel-inner .carousel-item-end, .carousel-inner .carousel-item-start{
     transform: translateX(0)
 }
 .card{
     margin-right: 20px;
     border: none;
-    /* height: 290px; */
+    border-radius: 10px;
+    /* z-index: 2; */
+    overflow: hidden;
+    
 }
-.card-img{
+.card > div{
+    border-radius: 10px;
+    overflow: hidden;
+}
+/* .card-img{
     overflow: hidden;
 
-}
+} */
 .card-img img{
     display: block;
     object-fit: cover;
-    transition: transform 0.8s;
+    transition: 0.3s ease;
     cursor: pointer;
-    border-radius: 10px;
+    overflow: hidden;
 }
 .card-img:hover img{
     transform: scale(1.2);
 }
-.card-img-overlay{
+
+.card .card-overlay{
+    content: "";
+    width: 100%;
     height: 100px;
-    display: block;
-    color: #fff;
-    text-align: start;
-    position: relative;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
     background-image: linear-gradient(to top,#000,transparent);
-    /* padding-top: 160px; */
+    z-index: 1;
+    transform: translateY(50px);
+    transition: 0.5s ease;
+}
+.card-img-overlay{
+    width: 100%;
+    color: #fff;
+    z-index: 2;
+    text-align: start;
+    position: absolute;
+    top: 60%;
+    transform: translateY(100px);
+    transition: 0.5s ease;
+}
+.card:hover .card-img-overlay, .card:hover .card-overlay{
+    transform: translateY(0);
 }
 .carousel-control-prev{
     width: 70px;
     height: 70px;
     justify-items: center;
-    top: 280px;
+    top: 245px;
     left: 30px;
     z-index: 0;
 }
@@ -65,7 +86,34 @@
     width: 70px;
     height: 70px;
     justify-items: center;
-    top: 280px;
+    top: 245px;
     right: 30px;
     z-index: 0;
+}
+
+@media (max-width: 1200px) {
+    .card-img-overlay{
+        font-size: 13px;
+    }    
+    .carousel-control-prev, .carousel-control-next{
+        /* position: absolute; */
+        top: 210px;
+    }
+}
+@media (max-width: 1124px) {
+    .carousel-control-prev, .carousel-control-next{
+        /* position: absolute; */
+        top: 210px;
+    }
+}
+@media (max-width: 1024px) {
+    .card-img-overlay{
+        font-size: 10px;
+    }    
+}
+@media (max-width: 992px) {
+    .carousel-control-prev, .carousel-control-next{
+        position: absolute;
+        top: 188px;
+    }
 }

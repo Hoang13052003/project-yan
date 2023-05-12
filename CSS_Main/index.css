@@ -11,7 +11,7 @@ body{
 .myslide{
     padding-top: 30px;
     padding-bottom: 40px;
-    /* height: 400px; */
+    background-color: #e5e3e3;
 }
 .myslide-update-croll{
     padding-top: 20px;
