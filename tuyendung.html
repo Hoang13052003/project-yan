@@ -9,20 +9,30 @@
     <link rel="stylesheet" href="CSS_Main/css_footer.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS_Main/tuyen_dung.css">
+    <link rel="stylesheet" href="CSS_Main/css_set_color.css">
     <link rel="stylesheet" href="CSS_Main/responsive.css">
     <script src="https://kit.fontawesome.com/456dcd6aaf.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="body">
+    <div id="top"></div>
+    <!-- header -->
     <header class="myheader">
         <div class="container-fluid header-container">
             <div class="row nav-top">
                 <div class="col-xl-2 col-md-2 nav-top-left"></div>
-                <div class="col-xl-7 col-md-10"></div>
+                <div class="col-xl-7 col-md-9"></div>
                 <div class="col-xl-2 nav-top-right">
                     <i class="fa-solid fa-circle-play"></i>
                     <span><a href="tuyendung.html" >Tuyển dụng</a></span>
                 </div>
-                <div class="col-md-1"></div>
+                <div class="col-xl-1 col-md-1">
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                           <input type="checkbox" id="checkbox" />
+                           <div class="slider round"></div>
+                        </label>
+                     </div>
+                </div>
             </div>
             <div class="row">
                 <nav class="navbar navbar-expand-lg">
@@ -33,15 +43,15 @@
                       </button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li><a href="nav_bar/video.html">VIDEO</a></li>
-                            <li><a href="nav_bar/sao.html">SAO</a></li>
-                            <li><a href="nav_bar/nhac.html">NHẠC</a></li>
-                            <li><a href="nav_bar/phim.html">PHIM</a></li>
-                            <li><a href="nav_bar/lam_dep.html">LÀM ĐẸP</a></li>
-                            <li><a href="nav_bar/doi.html">ĐỜI</a></li>
-                            <li><a href="nav_bar/gioi_tre.html">GIỚI TRẺ</a></li>
-                            <li><a href="nav_bar/chat.html">CHẤT</a></li>
-                            <li><a href="nav_bar/nhat_ky.html">NHẬT KÝ</a></li>
+                            <li><a href="video.html">VIDEO</a></li>
+                            <li><a href="sao.html">SAO</a></li>
+                            <li><a href="nhac.html">NHẠC</a></li>
+                            <li><a href="phim.html">PHIM</a></li>
+                            <li><a href="lam_dep.html">LÀM ĐẸP</a></li>
+                            <li><a href="doi.html">ĐỜI</a></li>
+                            <li><a href="gioi_tre.html">GIỚI TRẺ</a></li>
+                            <li><a href="chat.html">CHẤT</a></li>
+                            <li><a href="nhat_ky.html">NHẬT KÝ</a></li>
                             <li class="tuyen-dung">
                                 <a href="tuyendung.html" ><i class="fa-solid fa-circle-play"></i>TUYỂN DỤNG</a>
                             </li>
@@ -86,6 +96,11 @@
               </div>
         </div>
     </section>
+    <div class="len-dau-trang">
+        <img class="themes-trang" src="img/moon-reading.svg" alt="Chế độ đọc bài ban đêm">
+        <img class="QRcode" src="img/qr-code.svg" alt="">
+        <a href="#top"><img class="arrow-up" src="img/go-to-top.svg" alt=""></a>
+    </div>
     <!-- footer -->
     <footer class="footer">
         <div class="footer-nav">
@@ -273,6 +288,8 @@
           </div>
       </div>
     </footer>
+    <script src="JS_Main/js_head.js"></script>
+    <script src="JS_Main/js_themes.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
