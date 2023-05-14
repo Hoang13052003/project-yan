@@ -16,3 +16,18 @@ function switchTheme(e) {
     }
 }
 toggleSwitch.addEventListener('change', switchTheme);
+
+
+// thay đổi ảnh moon and sun
+function changeImage() {
+    var image = document.getElementById("img-themes");
+    var moon = document.querySelector('.moon');
+    if (image.src.match("img/moon-reading.svg")) {
+        image.src = "img/sun-reading.svg";
+        moon.classList.remove('note-moon');
+    } else {
+        moon.classList.add('note-moon');
+        image.src = "img/moon-reading.svg";
+    }
+  }
+

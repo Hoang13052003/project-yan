@@ -27,12 +27,6 @@
                     <span><a href="tuyendung.html" >Tuyển dụng</a></span>
                 </div>
                 <div class="col-xl-1 col-md-1">
-                    <div class="theme-switch-wrapper">
-                        <label class="theme-switch" for="checkbox">
-                           <input type="checkbox" id="checkbox" />
-                           <div class="slider round"></div>
-                        </label>
-                     </div>
                 </div>
             </div>
             <div class="row">
@@ -969,11 +963,22 @@
             </div>
         </div>
     </section>
-    <!-- cuon len dau trang themes website -->
+    <!-- cuon len dau trang va thay doi themes website -->
     <div class="len-dau-trang">
-        <img class="themes-trang" src="img/moon-reading.svg" alt="Chế độ đọc bài ban đêm">
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+               <input type="checkbox" id="checkbox" />
+               <!-- <div class="slider round"></div> -->
+               <img id="img-themes" class="themes-trang" src="img/moon-reading.svg"  onclick="changeImage()" alt="Chế độ đọc bài ban đêm">
+               <p class="note-moon moon">Chế độ đọc bài ban đêm</p>
+               <p class="note-sun">Chế độ đọc bài ban ngày</p>
+            </label>
+        </div>
         <img class="QRcode" src="img/qr-code.svg" alt="">
-        <a href="#top"><img class="arrow-up" src="img/go-to-top.svg" alt=""></a>
+        <div class="go-top">
+            <a href="#top"><img class="arrow-up" src="img/go-to-top.svg" alt=""></a>
+            <p class="note-go-top">Lên đầu trang</p>
+        </div>
     </div>
    <!-- footer -->
     <footer class="footer">
