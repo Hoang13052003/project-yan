@@ -24,3 +24,10 @@ window.addEventListener('scroll', function() {
     }
   prevScrollPos = currentScrollPos;
 });
+
+function goToTop(){
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // để có hiệu ứng cuộn mượt
+    });
+}

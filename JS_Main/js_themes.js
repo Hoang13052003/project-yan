@@ -4,30 +4,29 @@ if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
+        document.getElementById('img-themes').src = 'img/sun-reading.svg';//thay đổi ảnh thành sun khi theme dark
+        document.querySelector('.moon').classList.remove('note-moon');//ẩn chú thích của ảnh moon khi ảnh là sun
+    }
+    else{
+        document.getElementById('img-themes').src = 'img/moon-reading.svg';//ngược lại ở trên
+        document.querySelector('.moon').classList.add('note-moon');//ngược lại ở trên
     }
 }
 function switchTheme(e) {
     if (e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
+        document.getElementById('img-themes').src = 'img/sun-reading.svg';
+        document.querySelector('.moon').classList.remove('note-moon');
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
+        document.getElementById('img-themes').src = 'img/moon-reading.svg';
+        document.querySelector('.moon').classList.add('note-moon');
     }
 }
 toggleSwitch.addEventListener('change', switchTheme);
 
 
-// thay đổi ảnh moon and sun
-function changeImage() {
-    var image = document.getElementById("img-themes");
-    var moon = document.querySelector('.moon');
-    if (image.src.match("img/moon-reading.svg")) {
-        image.src = "img/sun-reading.svg";
-        moon.classList.remove('note-moon');
-    } else {
-        moon.classList.add('note-moon');
-        image.src = "img/moon-reading.svg";
-    }
-  }
+
 

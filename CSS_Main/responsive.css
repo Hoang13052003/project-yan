@@ -60,6 +60,9 @@
     .nav-top-right{
         display: none;
     }
+    .navbar-nav{
+        gap: 0;
+    }
 }
 
 @media (max-width: 1140px){
