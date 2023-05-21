@@ -1,0 +1,31 @@
+.video{
+    padding: 20px 0px;
+}
+.video iframe{
+    margin-bottom: 30px;
+}
+
+.like-share{
+    align-items: center;
+
+}
+.like-share button{
+    margin-right: 10px;
+}
+.item-video{
+    padding-right: 50px;
+}
+.item-img-video img{
+    border-radius: 8px;
+}
+.item-content-video{
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+.item-content-video a{
+    color: var(--black);
+    text-decoration: none;
+}
+.item-content-video:hover a{
+    color: #dd3333;
+}

@@ -1,0 +1,22 @@
+.ban-tin{
+    padding-right: 50px;
+}
+.nav-content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.nav-content li{
+    list-style: none;
+    margin-right: 10px;
+}
+.nav-content li a{
+    text-decoration: none;
+    color: #dd3333;
+}
+.nav-content .id{
+    margin-left: 10px;
+}
+.content-noi-dung p{
+    text-align: justify;
+}
