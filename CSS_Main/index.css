@@ -162,7 +162,7 @@
     width: 60%;
     height: 50px;
     line-height: 40px;
-    font-size: 20px;
+    font-size: 18px;
     color: red;
     border: 2px solid red;
     border-radius: 10px;
@@ -215,4 +215,11 @@
 }
 
 
+/* css fixed bạn thân phái đẹp khi scroll chuột đến vị trí nhất định */
+.fixed-fair{
+    position: fixed;
+    top: 20px;
+    margin: 0 40px;
+    /* z-index: 10;    */
+}
 

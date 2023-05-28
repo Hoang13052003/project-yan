@@ -27,3 +27,25 @@ var buttoncd = document.getElementById("button-cong-dong");
 buttoncd.onclick = function() {
     ShowAllCD("active-cong-dong");
 };
+
+
+///scroll chuột tới vị trí nhất định thì fixed bạn thân phái đẹp
+// var fixedElement = document.querySelector('.list-fair');
+
+// // Lấy vị trí ban đầu của phần tử
+// var initialOffset = fixedElement.offsetTop;
+
+// // Đăng ký sự kiện cuộn trang
+// window.addEventListener("scroll", function() {
+//   // Lấy vị trí cuộn chuột
+//   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+//   // Kiểm tra vị trí cuộn chuột
+//   if (scrollPosition >= initialOffset + 2500) {
+//     // Khi cuộn chuột đến khoảng cách nhất định, cố định phần tử
+//     fixedElement.classList.add('fixed-fair');
+//   } else {
+//     // Khi vị trí cuộn chuột nhỏ hơn khoảng cách nhất định, phần tử không còn cố định
+//     fixedElement.classList.remove('fixed-fair');
+//   }
+// });

@@ -48,6 +48,9 @@
     .footer-nav div a{
         font-size: 10px;
     }
+    #button-cong-dong{
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 1230px){
@@ -149,6 +152,10 @@
     .name-menu-video > span{
         line-height: 40px;
         font-size: 18px;
+    }
+
+    #button-cong-dong{
+        font-size: 14px;
     }
 }
 
